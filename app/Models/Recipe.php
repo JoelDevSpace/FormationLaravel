@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Arr;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Recipe extends Model
 {
@@ -13,5 +13,11 @@ class Recipe extends Model
         //'is_published' => 'boolean', autres examples de types
         //'published_at' => 'datetime'
     ];
-
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class)->withDefault([
+            'name' => 'Inconnu'
+        ]);
+        // withDefault permet de dire que si l'utilisateur n'existe pas, on retourne un utilisateur avec le nom "Inconnu"
+    }
 }
