@@ -13,21 +13,21 @@ return new class extends Migration {
         Schema::create('recipes', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->json('ingredients');
             $table->timestamps();
         });
 
         // Ajout des données initiales
         $recipes = [
-            1 => ['title' => 'Spaghetti Carbonara', 'ingredients' => ['Pâtes', 'Oeufs', 'Fromage', 'Lardons']],
-            2 => ['title' => 'Poulet Curry', 'ingredients' => ['Poulet', 'Lait de coco', 'Curry']],
-            3 => ['title' => 'Sauté de légumes', 'ingredients' => ['Brocoli', 'Carottes', 'Sauce soja', 'Ail']]
+            1 => ['title' => 'Spaghetti Carbonara'],
+            2 => ['title' => 'Poulet Curry'],
+            3 => ['title' => 'Sauté de légumes']
         ];
 
         foreach ($recipes as $recipe) {
             DB::table('recipes')->insert([
                 'title' => $recipe['title'],
-                'ingredients' => json_encode($recipe['ingredients'])
+                'created_at' => now(),
+                'updated_at' => now()
             ]);
         }
     }
