@@ -25,7 +25,7 @@ Route::get('/recipe/{id}', function ($id) {
     return view('recipes.show', compact('recipe'));
 })->name('recipes.show');
 
-Route::get('/attach', function () {
+/*Route::get('/attach', function () {
     $ingredients = [
         1 => ['name' => 'Pates', 'recipe_id' => 1],
         2 => ['name' => 'Oeufs', 'recipe_id' => 1],
@@ -46,4 +46,4 @@ Route::get('/attach', function () {
     }
     dd('ok');
 
-});
+});*/
