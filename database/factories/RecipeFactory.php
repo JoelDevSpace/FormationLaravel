@@ -23,9 +23,7 @@ class RecipeFactory extends Factory
 
         return [
             'title' => Str::title($title),
-            'user_id' => fake()->boolean()
-                ? User::factory()->create()->id
-                : null,
+            'user_id' => fake()->boolean() ? User::factory()->create()->id : null,
         ];
     }
 }

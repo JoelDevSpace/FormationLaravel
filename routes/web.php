@@ -9,9 +9,9 @@ Route::get('/', function () {
     return view('homepage');
 })->name('homepage');
 
-Route::get('/project', function () {
-    return view('project');
-})->name('project');
+Route::get('/projects', function () {
+    return view('projects');
+})->name('projects');
 
 Route::get('/recipes', function () {
     $recipes = Recipe::all();
