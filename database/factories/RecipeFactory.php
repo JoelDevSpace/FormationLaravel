@@ -26,4 +26,10 @@ class RecipeFactory extends Factory
             'user_id' => fake()->boolean() ? User::factory()->create()->id : null,
         ];
     }
+    public function withUser(): static
+    {
+        return $this->state(fn(array $attributes) => [
+            'user_id' => User::factory(),
+        ]);
+    }
 }

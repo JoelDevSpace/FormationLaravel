@@ -11,7 +11,6 @@ class Recipe extends Model
 {
     use HasFactory;
 
-
     //permet de dire que quand on va chercher un champ ingredients, on le transforme en tableau
     //protected $casts = [
     //'ingredients' => 'array',

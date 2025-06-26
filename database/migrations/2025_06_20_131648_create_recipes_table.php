@@ -17,19 +17,19 @@ return new class extends Migration {
         });
 
         // Ajout des données initiales
-        $recipes = [
+        /*$recipes = [
             1 => ['title' => 'Spaghetti Carbonara'],
             2 => ['title' => 'Poulet Curry'],
             3 => ['title' => 'Sauté de légumes']
-        ];
+        ];*/
 
-        foreach ($recipes as $recipe) {
+        /*foreach ($recipes as $recipe) {
             DB::table('recipes')->insert([
                 'title' => $recipe['title'],
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
-        }
+        }*/
     }
 
     /**
