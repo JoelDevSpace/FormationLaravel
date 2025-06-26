@@ -7,6 +7,19 @@ Disponible sur sa chaime Youtube et son site https://www.apprendre-laravel-12.ne
 
 Un grand merci à lui
 
+## Voici les chapitres traités (les commit suivent l'ordre des leçons)
+
+1- Premiers pas et structure de Laravel 12
+2- les vues avec Blade et TailwindCSS
+3- PAsser des doonées aux vues
+4- le M dans MVC
+5- LEs migrations
+6- Eloquent
+7- Relations HasMany / BelongsTo
+8- Relations BelongsToMany
+9- Les Factories
+10- Les Seeders
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
