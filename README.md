@@ -2,16 +2,22 @@
 
 ## Formation Laravel
 
-Projet sui suit la formation de Laravel Jutsu
+Projet sui suit la formation de Ludovic alias Laravel Jutsu
 Disponible sur sa chaime Youtube et son site https://www.apprendre-laravel-12.net/
 
 Un grand merci à lui
+
+## liens des ressources
+
+1- La playlist Youtube : https://www.youtube.com/watch?v=dhuVY0nKKqs&list=PLeeuvNW2FHViRO-cePai-47IWuS76O4oa
+2- le repo Git : https://github.com/ludoguenet/l12/tree/feat/seeder
+3- le site : https://www.apprendre-laravel-12.net/
 
 ## Voici les chapitres traités (les commit suivent l'ordre des leçons)
 
 1- Premiers pas et structure de Laravel 12
 2- les vues avec Blade et TailwindCSS
-3- PAsser des doonées aux vues
+3- Passer des doonées aux vues
 4- le M dans MVC
 5- LEs migrations
 6- Eloquent
